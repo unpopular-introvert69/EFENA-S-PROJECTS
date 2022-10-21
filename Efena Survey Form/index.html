@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efena's Survey Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1 id="title">Efena's Survey Form</h1>
+    <p id="description"><i>Grateful for working with me</i></p>
+
+    <form id="efena-form">
+        <fieldset>
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" class="input-initials" placeholder="Enter your name" required>
+            <label for="number" id="age-label">Age</label>
+            <input type="number" id="age-label" min="15" max="25" class="input-initials" required>
+            <label for="email">Email</label>
+            <input type="email" id="email-label" placeholder="Enter your email" class="input-initials" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="gender">Male</label>
+            <input type="radio" name="gender"  value="male" class="gender">
+            <label for="gender">Female</label>
+            <input type="radio" name="gender" value="female" class="gender">
+        </fieldset>
+
+        <fieldset>
+            <label>Do you want to work with Efena?</label>
+            <label id="question" class="question">Yes</label>
+            <input type="radio" name="efena" value="yes" class="question">
+            <label id="question" class="question">No</label>
+            <input type="radio" name="efena" value="no" class="question">
+            <label id="question" class="question">Maybe</label>
+            <input type="radio" name="efena" value="maybe" class="question">
+            
+        </fieldset>
+
+        <fieldset>
+            <label for="">What area will you work on with us?</label>
+            <select id="dropdown" class="input-select">
+                <option value="">Select your area</option>
+                <option value="1">HTML&CSS</option>
+                <option value="2">Web design</option>
+                <option value="3">Web development</option>
+                <option value="4">Websites</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <label for="comments">Write your comments below</label>
+            <textarea name="" id="comments" cols="30" rows="5" placeholder="place your comments here..."></textarea>
+        </fieldset>
+
+        <button class="submit" id="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
